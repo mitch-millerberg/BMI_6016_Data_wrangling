@@ -1,0 +1,82 @@
+﻿* This proposal is about 3-4 pages of text.
+
+
+* Schedule a project review meeting with a staff member during regular lecture times of the week marked in the schedule. 
+
+
+* The proposal will be submitted by uploading it to your team’s GitHub repository.
+
+
+* Basic Info. The project title, your names, e-mail addresses, UIDs, a link to the project repository. 
+Title: Metabolic Syndrome: Integrating Genetic Risk Factors with Diet and Physical Activity Data
+
+
+Group 5: Wild West Wranglers
+Ashley Pritchard - u1256025@umail.utah.edu - U1256025
+Carter Hardy - u1538956@umail.utah.edu - u1538956
+Jittrapol Sutejitsiri -  u1538222@umail.utah.edu - u1538222
+Mitchell Millerberg - mitchell.millerberg@gmail.com - u0774005
+Nathaniel Masson - nathaniel.masson@utah.edu - u0493285
+
+
+: https://github.com/mitch-millerberg/BMI_6016_Data_wrangling.git
+
+
+* Background and Motivation. Discuss your motivations and reasons for choosing this project, especially any background or research interests that may have influenced your decision. 
+
+
+* Project Objectives. Provide the primary questions you are trying to answer with your data. What would you like to learn and accomplish? List the benefits of how the data could be useful. 
+
+
+* Data. From where and how are you collecting your data? If appropriate, provide a link to your data sources.
+
+
+* Data Processing. Do you expect to do substantial data cleanup? What quantities do you plan to derive from your data? How will data processing be implemented? 
+
+
+* Design. How will you display your data? Provide some general ideas that you have for the design. Develop one alternative prototype design for your data.. Describe your designs and justify your choices of visual encodings. 
+
+
+
+
+* Must-have Features List the features without which you would consider your project to be a failure.
+1.  
+2.  
+3.  
+4.  
+5. 
+
+* Optional Features List the features which you consider to be nice to have, but not critical.
+1.  
+2.  
+3.  
+4. 5.   
+
+
+
+
+
+
+* Project Schedule.
+Feb 2 - Project name and team members
+Feb 16 - Project Proposal due at 11:59pm
+* Mitch - All things repo/ design/ editing
+* Carter - Data 
+* Nate - Objectives
+* Ashley - Background (Will be done by saturday 2/15)
+* Jittrapol - Data Processing
+* Everyone - must have/ want to have
+
+
+March 7 - Meet with instructors and get feedback on project
+* Determine if a meeting needs to be set up or if prof will be setting up meeting times (by march 1st at the latest)
+* March 30 - Intermediate presentation and get peer feedback
+* Complete intermediate presentation at least one day in advance
+April 4 - meet with instructors and get feedback on project X2
+* Determine if a meeting needs to be set up or if prof will be setting up meeting times (by march 30th at the latest)
+April 21 - Final presentation
+* Complete presentation at least two days in advance
+* Full run through at least one time prior to presentation day
+April 22 - Final project submission
+* Ideally submit before the final time
+April 22 - Self assessment of group participation
