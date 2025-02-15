@@ -9,8 +9,6 @@
 
 * Basic Info. The project title, your names, e-mail addresses, UIDs, a link to the project repository. 
 Title: Metabolic Syndrome: Integrating Genetic Risk Factors with Diet and Physical Activity Data
-
-
 Group 5: Wild West Wranglers
 Ashley Pritchard - u1256025@umail.utah.edu - U1256025
 Carter Hardy - u1538956@umail.utah.edu - u1538956
@@ -18,8 +16,7 @@ Jittrapol Sutejitsiri -  u1538222@umail.utah.edu - u1538222
 Mitchell Millerberg - mitchell.millerberg@gmail.com - u0774005
 Nathaniel Masson - nathaniel.masson@utah.edu - u0493285
 
-
-: https://github.com/mitch-millerberg/BMI_6016_Data_wrangling.git
+git Link: https://github.com/mitch-millerberg/BMI_6016_Data_wrangling.git
 
 
 * Background and Motivation. Discuss your motivations and reasons for choosing this project, especially any background or research interests that may have influenced your decision. 
@@ -52,10 +49,6 @@ Nathaniel Masson - nathaniel.masson@utah.edu - u0493285
 3.  
 4. 
 5.   
-
-
-
-
 
 
 * Project Schedule.
