@@ -1,6 +1,5 @@
 ﻿* Basic Info. 
-
-
+Topic:  Metabolic Syndrome: Integrating Genetic Risk Factors Physical Activity Data
 Title: Metabolic Syndrome: Integrating Genetic Risk Factors with Diet and Physical Activity Data
 
 
@@ -16,9 +15,6 @@ Github link: https://github.com/mitch-millerberg/BMI_6016_Data_wrangling.git
 
 
 * Background and Motivation: 
-Topic:  Metabolic Syndrome: Integrating Genetic Risk Factors Physical Activity Data
-
-
 Metabolic syndrome (MetS) is a disorder that affects about one in three adults in the United States (NIH, 2022). The disorder is characterized by abdominal obesity, high blood pressure, hyperlipidemia, and raised fasting blood glucose levels (Codazzi, 2024). While there is no direct cause of MetS, one’s genetics, diet, and levels of physical activity may increase the risk of MetS (Codazzi, 2024). Previous research has shown that there is a link between specific single nucleotide polymorphisms (SNPs) and increased risk of MetS. There has also been research to demonstrate that diets high in meat, fried food, diet sodas, and alcohol lead to an increased risk of MetS. (Hardy, 2021). Low levels of physical activity is a major risk factor for MetS, but on the other hand, physical activity is known to reduce every clinical component of MetS (Chomiuk, 2024). There are a variety of factors that can lead to MetS; having a genetic predisposition can influence an individual's susceptibility of developing the disorder, and a poor diet with low levels of physical activity can further increase the risk. With that in mind, physical activity may be able to mitigate the risk of developing metabolic syndrome, even for those who have a predisposed risk due to genetics.
 The motivation behind choosing the project was being able to use the All of Us database. After looking through the database and discussing it as a group, we settled on utilizing the “Genomics”, “Fitbit” and “Conditions” data. We are interested in diving deeper into the Metabolic Syndrome risks associated with genetics and physical activity. Our group was particularly interested in the Fitbit and genetic data as many of us have fitness watches, and a general interest in genetics. Metabolic syndrome was recommended by a member of the group as it seemed like a good way to bridge the gap between genetics and fitbit as there is not much of an overlap there. With metabolic syndrome having both a genetic and lifestyle component to it, there is a greater possibility that data from all three datasets can be used.
 
@@ -37,7 +33,7 @@ The second part of the project will focus on wrangling a dataset that integrates
 
 
 * Data:
-The Wild West Wranglers will be utilizing data from the All of Us Public Data Browser. We will extract relevant datasets from the Electronic Health Records (EHR) and Genomic Data sections to analyze factors influencing metabolic diseases.
+The Wild West Wranglers will be utilizing data from the All of Us Public Data Browser which offers a platform for biomedical research including a comprehensive data resource and Researcher Workbench. We will extract relevant datasets from the Electronic Health Records (EHR) and Genomic Data sections to analyze factors influencing metabolic diseases.
 Specifically, we will use the Condition, SNV (Single Nucleotide Variant), and Fitbit datasets. The Condition dataset will provide clinical diagnoses and disease progression information, while the SNV dataset will offer genetic variations that may be associated with metabolic conditions. Additionally, the Fitbit dataset will supply real-world biometric and activity tracking data, allowing us to examine lifestyle factors such as physical activity, heart rate, and sleep patterns.
 By integrating these datasets, we aim to investigate how genetic predispositions, lifestyle behaviors, and clinical conditions interact in the development and progression of metabolic diseases. This approach will enable us to conduct meaningful analyses on potential risk factors and identify trends that may inform future public health interventions.
 Dataset:
@@ -48,6 +44,7 @@ https://databrowser.researchallofus.org/
 AoU username
 ill_mitch_hell@researchallofus.org
 nsm4@researchallofus.org
+ashleypritchard@researchallofus.org
 
 
 * Data Processing: 
@@ -55,6 +52,8 @@ After data processing, we expect to receive 90% of cleaned data. The participant
 Regarding physical activity and clinical result group, we will understand the characteristics of data by knowing general info, data types and null values, descriptive statistics and data distribution. Following by filtering the interested column and converting some categorical data into ordinal data such as gender, income range. The processes of data processing are removing duplication and organizing null values (replace with mean or mode), and checking and eliminating outliers by using interquartile range.  Patient’s health record is classified by using metabolic syndrome criteria (resting glucose level, HbA1C, glucosuria). Meanwhile, the patient's lifestyle is classified by calories intakes and activity into low, medium and high activities. 
 For genomic data, we will assess the quality of your raw sequencing data. FastQC will be used to identify issues such as low-quality bases, adapter contamination, and other anomalies. Followed by trimming and filtering low-quality bases and adapter sequences from reads. The clean genomic data will be mapped reads with reference and patient genome, and then validating the identified SNVs using an independent method, such as Sanger sequencing, to ensure their accuracy.
 * Design:
+
+
 Option 1:
 The All of Us Research Program provides a platform for biomedical research that includes a Researcher Workbench and a comprehensive data resource. Utilize the Researcher Workbench to create a dataset that integrates wearable-tracked physiological data, physical activity, and Multiple SNVs for polygenic risk scores.
 
@@ -94,7 +93,10 @@ Interactive 3D Scatter Plot with Time Slider
 4. Clinical Indicators (e.g., BMI, blood pressure, or cholesterol levels) would be represented by Color.
 5. Data Completeness would be represented by Size, with larger points indicating more complete data.
 6. A Time Slider would allow researchers to view changes over time.
-The visualization includes SNVs, physical activity, wearable and EHR data, and addresses optional dietary and genetic data. An interactive visualization that combines genetic predisposition, lifestyle factors, and clinical outcomes allows researchers to explore these complex interactions and supports precision medicine by identifying patterns for personalized treatment.
+The visualization includes SNVs, physical activity, wearable and EHR data, and addresses optional dietary and genetic data.
+
+
+An interactive visualization that combines genetic predisposition, lifestyle factors, and clinical outcomes allows researchers to explore these complex interactions and supports precision medicine by identifying patterns for personalized treatment.
 
 
 Must-have Features
@@ -103,7 +105,7 @@ List the features without which you would consider your project to be a failure.
 2.  BMI, blood pressure, blood glucose, HbA1C, confirmed DM, glucosuria (jittrapol)
 3.  Wearable-tracked physiological data (mitch)
 4.  EHR-based clinical indicators related to metabolic syndrome (mitch)
-5.  Genetic risk factors (mitch)
+5. Genetic risk factors (mitch)
 
 
 Optional Features
@@ -114,8 +116,9 @@ List the features which you consider to be nice to have, but not critical.
 4. 5.   
 
 
-* Project Schedule.
-Feb 2 - Project name and team members
+* Project Schedule
+
+
 Feb 16 - Project Proposal due at 11:59pm
 * Mitch - All things repo/ design/ editing
 * Carter - Data 
