@@ -1,4 +1,6 @@
-﻿* Basic Info. The project title, your names, e-mail addresses, UIDs, a link to the project repository. 
+﻿* Basic Info. 
+
+
 Title: Metabolic Syndrome: Integrating Genetic Risk Factors with Diet and Physical Activity Data
 
 
@@ -10,10 +12,10 @@ Mitchell Millerberg - u00774005@utah..edu - u0774005
 Nathaniel Masson - nathaniel.masson@utah.edu - u0493285
 
 
-: https://github.com/mitch-millerberg/BMI_6016_Data_wrangling.git
+Github link: https://github.com/mitch-millerberg/BMI_6016_Data_wrangling.git
 
 
-* Background and Motivation. Discuss your motivations and reasons for choosing this project, especially any background or research interests that may have influenced your decision. 
+* Background and Motivation: 
 Topic:  Metabolic Syndrome: Integrating Genetic Risk Factors Physical Activity Data
 
 
@@ -48,32 +50,11 @@ ill_mitch_hell@researchallofus.org
 nsm4@researchallofus.org
 
 
-* Data Processing. Do you expect to do substantial data cleanup? What quantities do you plan to derive from your data? How will data processing be implemented? 
-
-
-After data processing, we expect to receive 90% of cleaned data. Some data from All of Us Public Data Browser is HbA1c-154,400 patients, blood glucose - 282,020 patients.The health record and lifestyle dataset will be implemented by pandas dataframe in python via the following processes.
-Health record (HER) and lifestyle data (wearable devices and survey)
-1.       Understanding the characteristics of data (df.info, df.describe)
-- general info, data types and null values (categorical or numerical data)
-- descriptive statistics
-- visualize to see the data distribution (categorical data)
-2.       Filtering the interested column
-3.       Change some categorical data into ordinal data such as gender, income range,
-4.       The process of data processing:
-- Remove duplicate
-- organize null value (replace with mean or mode)
-- checking and eliminating outlier by using interquartile range
-5.       Patient’s health record is classified by using metabolic syndrome criteria (resting glucose level). Type II diabetes patients are the majority of this analysis.
-6.       Patient’s lifestyle is classified by calories intakes and activity into low, medium and high activities. 
-Genomic data 
-1.       Assess the quality of your raw sequencing data. FastQC will be used to identify issues such as low-quality bases, adapter contamination, and other anomalies.
-2.       Trimming and filtering low-quality bases and adapter sequences from reads.
-3.       Mapping reads with reference and patient genome
-4.       Validate the identified SNVs using an independent method, such as Sanger sequencing, to ensure their accuracy.
-5. Estimate the genetic risk factors
-
-
-* Design. How will you display your data? Provide some general ideas that you have for the design. Develop one alternative prototype design for your data.. Describe your designs and justify your choices of visual encodings. 
+* Data Processing: 
+After data processing, we expect to receive 90% of cleaned data. The participants from All of Us Public Data Browser are around 350,000.The health record and lifestyle dataset will be implemented by pandas dataframe in python via the following processes. Datasets are classified into 2 groups which are comfortable to manipulate 1.Health record (HER) and lifestyle data (wearable devices and survey, and 2. genomic data. 
+Regarding physical activity and clinical result group, we will understand the characteristics of data by knowing general info, data types and null values, descriptive statistics and data distribution. Following by filtering the interested column and converting some categorical data into ordinal data such as gender, income range. The processes of data processing are removing duplication and organizing null values (replace with mean or mode), and checking and eliminating outliers by using interquartile range.  Patient’s health record is classified by using metabolic syndrome criteria (resting glucose level, HbA1C, glucosuria). Meanwhile, the patient's lifestyle is classified by calories intakes and activity into low, medium and high activities. 
+For genomic data, we will assess the quality of your raw sequencing data. FastQC will be used to identify issues such as low-quality bases, adapter contamination, and other anomalies. Followed by trimming and filtering low-quality bases and adapter sequences from reads. The clean genomic data will be mapped reads with reference and patient genome, and then validating the identified SNVs using an independent method, such as Sanger sequencing, to ensure their accuracy.
+* Design:
 Option 1:
 The All of Us Research Program provides a platform for biomedical research that includes a Researcher Workbench and a comprehensive data resource. Utilize the Researcher Workbench to create a dataset that integrates wearable-tracked physiological data, physical activity, and Multiple SNVs for polygenic risk scores.
 
@@ -119,7 +100,8 @@ The visualization includes SNVs, physical activity, wearable and EHR data, and a
 Must-have Features
 List the features without which you would consider your project to be a failure.
 1.  Multiple SNVs for polygenic risk scores. (Nate)
-2. 3.  Wearable-tracked physiological data (mitch)
+2.  BMI, blood pressure, blood glucose, HbA1C, confirmed DM, glucosuria (jittrapol)
+3.  Wearable-tracked physiological data (mitch)
 4.  EHR-based clinical indicators related to metabolic syndrome (mitch)
 5.  Genetic risk factors (mitch)
 
@@ -128,12 +110,8 @@ Optional Features
 List the features which you consider to be nice to have, but not critical.
 1.  Dietary measures. (Nate)
 2.  Physical activity data (mitch)
-3.  
+3.  Looking into children with MetS (Ashley)
 4. 5.   
-
-
-
-
 
 
 * Project Schedule.
@@ -149,7 +127,7 @@ Feb 16 - Project Proposal due at 11:59pm
 
 March 7 - Meet with instructors and get feedback on project
 * Determine if a meeting needs to be set up or if prof will be setting up meeting times (by march 1st at the latest)
-* March 30 - Intermediate presentation and get peer feedback
+March 30 - Intermediate presentation and get peer feedback
 * Complete intermediate presentation at least one day in advance
 April 4 - meet with instructors and get feedback on project X2
 * Determine if a meeting needs to be set up or if prof will be setting up meeting times (by march 30th at the latest)
