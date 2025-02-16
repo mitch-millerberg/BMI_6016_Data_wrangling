@@ -50,7 +50,8 @@ ashleypritchard@researchallofus.org
 * Data Processing: 
 After data processing, we expect to receive 90% of cleaned data. The participants from All of Us Public Data Browser are around 350,000.The health record and lifestyle dataset will be implemented by pandas dataframe in python via the following processes. Datasets are classified into 2 groups which are comfortable to manipulate 1.Health record (HER) and lifestyle data (wearable devices and survey, and 2. genomic data. 
 Regarding physical activity and clinical result group, we will understand the characteristics of data by knowing general info, data types and null values, descriptive statistics and data distribution. Following by filtering the interested column and converting some categorical data into ordinal data such as gender, income range. The processes of data processing are removing duplication and organizing null values (replace with mean or mode), and checking and eliminating outliers by using interquartile range.  Patient’s health record is classified by using metabolic syndrome criteria (resting glucose level, HbA1C, glucosuria). Meanwhile, the patient's lifestyle is classified by calories intakes and activity into low, medium and high activities. 
-For genomic data, we will assess the quality of your raw sequencing data. FastQC will be used to identify issues such as low-quality bases, adapter contamination, and other anomalies. Followed by trimming and filtering low-quality bases and adapter sequences from reads. The clean genomic data will be mapped reads with reference and patient genome, and then validating the identified SNVs using an independent method, such as Sanger sequencing, to ensure their accuracy.
+For genomic data, we will get the preprocessing data and will be investigated for genetic predisposing factors. These data will be grouped depending on diabetes conditions.
+
 
 * Design:
 
