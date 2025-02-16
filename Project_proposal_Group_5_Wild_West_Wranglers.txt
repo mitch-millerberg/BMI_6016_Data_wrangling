@@ -51,8 +51,8 @@ ashleypritchard@researchallofus.org
 After data processing, we expect to receive 90% of cleaned data. The participants from All of Us Public Data Browser are around 350,000.The health record and lifestyle dataset will be implemented by pandas dataframe in python via the following processes. Datasets are classified into 2 groups which are comfortable to manipulate 1.Health record (HER) and lifestyle data (wearable devices and survey, and 2. genomic data. 
 Regarding physical activity and clinical result group, we will understand the characteristics of data by knowing general info, data types and null values, descriptive statistics and data distribution. Following by filtering the interested column and converting some categorical data into ordinal data such as gender, income range. The processes of data processing are removing duplication and organizing null values (replace with mean or mode), and checking and eliminating outliers by using interquartile range.  Patient’s health record is classified by using metabolic syndrome criteria (resting glucose level, HbA1C, glucosuria). Meanwhile, the patient's lifestyle is classified by calories intakes and activity into low, medium and high activities. 
 For genomic data, we will assess the quality of your raw sequencing data. FastQC will be used to identify issues such as low-quality bases, adapter contamination, and other anomalies. Followed by trimming and filtering low-quality bases and adapter sequences from reads. The clean genomic data will be mapped reads with reference and patient genome, and then validating the identified SNVs using an independent method, such as Sanger sequencing, to ensure their accuracy.
-* Design:
 
+* Design:
 
 Option 1:
 The All of Us Research Program provides a platform for biomedical research that includes a Researcher Workbench and a comprehensive data resource. Utilize the Researcher Workbench to create a dataset that integrates wearable-tracked physiological data, physical activity, and Multiple SNVs for polygenic risk scores.
@@ -71,20 +71,16 @@ Data Display and Design Ideas:
    - Include filters for demographic factors, genetic risk scores, and clinical indicators.
    - Use color-coding to highlight risk levels for different metabolic syndrome components.
 
-
 2. Longitudinal Visualization:
    - Design a timeline view showing changes in physical activity and clinical indicators over time.
    - Incorporate wearable data trends alongside clinical measurements.
-
 
 3. Network Graph:
    - Visualize relationships between genetic risk factors, physical activity levels, and clinical outcomes.
    - Use node size to represent the strength of associations.
 
-
 Option 2 (alternative)
 Design a visualization tool to display the relationships between genetic risk factors, physical activity, and clinical outcomes related to metabolic syndrome. The proposed design is an interactive 3D scatter plot with a time slider, combining multiple data types into a single, comprehensive visualization.
-
 
 Interactive 3D Scatter Plot with Time Slider
 1. Polygenic Risk Score (PRS) for metabolic syndrome would be displayed on the X-axis.
@@ -94,7 +90,6 @@ Interactive 3D Scatter Plot with Time Slider
 5. Data Completeness would be represented by Size, with larger points indicating more complete data.
 6. A Time Slider would allow researchers to view changes over time.
 The visualization includes SNVs, physical activity, wearable and EHR data, and addresses optional dietary and genetic data.
-
 
 An interactive visualization that combines genetic predisposition, lifestyle factors, and clinical outcomes allows researchers to explore these complex interactions and supports precision medicine by identifying patterns for personalized treatment.
 
@@ -113,11 +108,10 @@ List the features which you consider to be nice to have, but not critical.
 1.  Dietary measures. (Nate)
 2.  Physical activity data (mitch)
 3.  Looking into children with MetS (Ashley)
-4. 5.   
-
+4. 
+5.   
 
 * Project Schedule
-
 
 Feb 16 - Project Proposal due at 11:59pm
 * Mitch - All things repo/ design/ editing
